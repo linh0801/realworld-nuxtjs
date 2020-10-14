@@ -1,8 +1,8 @@
 name: GitHub Actions Demo
 on:
-push:
- tags:
-  - 'v*'
+    push:
+      branches:
+      - main
 jobs:
 build-and-deploy:
  runs-on: ubuntu-latest
