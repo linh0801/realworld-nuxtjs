@@ -52,7 +52,7 @@ module.exports = {
   server: {
     // 表示监听所有的IP地址
     host: '0.0.0.0',
-    port: 3000
+    port: 8000
   },
   // 注册插件
   plugins: [
