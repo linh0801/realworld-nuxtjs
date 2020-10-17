@@ -151,7 +151,7 @@ export default {
    const page = parseInt( query.page || 1)
    const tag = query.tag
    const tab = query.tab || 'Global Feed'
-   const loadArticles = tab === 'Global Feed' ? getArticles : getYourFeedArticle
+   const loadArticles = tab !== 'Your Feed' ? getArticles : getYourFeedArticle
    // 使用promise.all 并行执行任务，提高的速度
    const [articlesRes, tagsRes] =  await Promise.all([
      loadArticles ({ 
